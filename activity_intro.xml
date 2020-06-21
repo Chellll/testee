@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF9E8E"
+        tools:context=".ui.activity.intro.IntroActivity">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="TwentyOne"
+            android:textColor="#000"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26"
+            app:srcCompat="@drawable/logo_game" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="384dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:maxWidth="300dp"
+            android:text="Начнем игру поскорее? Но сначала надо войти..."
+            android:textColor="#303030"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="241dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_border"
+            android:text="Войти"
+            app:layout_constraintEnd_toEndOf="@+id/textView27"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <Button
+            android:id="@+id/guest"
+            android:layout_width="237dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_border"
+            android:text="Гость"
+            app:layout_constraintEnd_toEndOf="@+id/textView27"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/signIn" />
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="236dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_border"
+            android:text="Регистрация"
+            app:layout_constraintEnd_toEndOf="@+id/textView27"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/guest" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:text="Есть Google - аккаунт?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/registration"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/registration" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toStartOf="@+id/textView28"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toTopOf="@+id/textView28"
+            app:srcCompat="@drawable/ic_google_1" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Войдите"
+            android:textColor="#0181FF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintStart_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:gravity="center_horizontal"
+            android:maxWidth="400dp"
+            android:text='Создавая аккаунт, я соглашаюсь с политикой пользования "MAZITOGAME"'
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
